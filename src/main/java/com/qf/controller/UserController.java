@@ -72,6 +72,7 @@ public class UserController {
         queryWrapper.eq(user.getName() != null, User::getName, user.getName());
         List<User> list = userService.list(queryWrapper);
         return list;
+
     }
 
 }
